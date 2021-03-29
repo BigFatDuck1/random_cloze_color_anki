@@ -1,0 +1,27 @@
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+:root {
+	--cloze_color: yellow
+}
+
+/*
+.cloze {
+ font-weight: bold;
+ color: blue;
+}
+*/
+
+.cloze, .cloze b, .cloze u, .cloze i {
+ font-size: 22px; font-weight: bold; color: var(--cloze_color) !important;
+}
+
+.nightMode .cloze {
+ color: lightblue;
+}
+

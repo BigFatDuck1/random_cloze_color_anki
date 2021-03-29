@@ -1,0 +1,40 @@
+{{cloze:Text}}
+
+<script>
+
+    //Random variable 
+    // Get the root element
+    var r = document.querySelector(':root');
+
+    // Change to random colour
+    var cloze_color = [
+        'blue',
+        '#27AE60', //Green
+        '#E67E22', //Orange
+        '#FFFF00', //Yellow
+        '#34e7e4', //Light blue
+        '#ffa801', //Orange
+        '#ff3f34', //Red
+        '#d2dae2', //White
+        '#cd84f1', //Magneta
+
+        //Solaris colours
+        '#b58900', //Yellow
+        '#cb4b16', //Orange
+        '#dc322f', //Red
+        '#d33682', //Magneta
+        '#6c71c4', //Violet
+        '#268bd2', //Blue
+        '#859900'  //Green
+    ];
+    var random_cloze_color = cloze_color[Math.floor(Math.random() * cloze_color.length)];
+
+    //Sets the color
+    function set_color() {
+        // Set the value of variable --cloze_color to another value
+        r.style.setProperty('--cloze_color', random_cloze_color);
+    }
+
+    set_color()
+
+</script>
